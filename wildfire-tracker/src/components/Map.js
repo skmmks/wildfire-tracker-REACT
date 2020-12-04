@@ -13,4 +13,9 @@ const Map = ({ center, zoom }) => {
   );
 };
 
+Map.defaultProps = {
+  center: {
+    //need to add center coordinates
+  },
+};
 export default Map;
