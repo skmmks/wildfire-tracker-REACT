@@ -17,5 +17,6 @@ Map.defaultProps = {
   center: {
     //need to add center coordinates
   },
+  zoom: 6,
 };
 export default Map;
