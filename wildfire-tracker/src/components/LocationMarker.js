@@ -5,7 +5,7 @@ import locationIcon from '@iconify/icons-mdi/fire-alert';
 const LocationMarker = ({ lat, lng, onClick }) => {
   return (
     <div className='location-marker' onClick={onClick}>
-      <Icon icon={location} className='location-icon'></Icon>
+      <Icon icon={locationIcon} className='location-icon'></Icon>
     </div>
   );
 };
