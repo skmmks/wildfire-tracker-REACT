@@ -6,6 +6,13 @@ function App() {
   const [eventData, setEventData] = useState([]);
   const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    const fetchEvents = async () => {
+      setLoading(true);
+      const res = await fetch('');
+    };
+  });
+
   return (
     <div>
       <h1>Welcome to the App</h1>
