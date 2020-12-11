@@ -19,12 +19,7 @@ function App() {
     fetchEvents();
   }, []);
 
-  return (
-    <div>
-      <h1>Welcome to the App</h1>
-      <Map />
-    </div>
-  );
+  return <div>{!loading ? <Map eventData={eventData} /> : <h1>Loading</h1>}</div>;
 }
 
 export default App;
