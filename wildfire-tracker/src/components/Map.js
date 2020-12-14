@@ -18,6 +18,7 @@ const Map = ({ eventData, center, zoom }) => {
         defaultZoom={zoom}
       >
         <LocationMarker lat={center.lat} lng={center.lng} />
+        {markers}
       </GoogleMapReact>
     </div>
   );
