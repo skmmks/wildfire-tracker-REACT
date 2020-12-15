@@ -9,7 +9,13 @@ const Map = ({ eventData, center, zoom }) => {
 
   const markers = eventData.map((event) => {
     if (event.categories[0].id === 8) {
-      return <LocationMarker lat={event.geometries[0].coordinates[1]} lng={event.geometries[0].coordinates[0]} />;
+      return (
+        <LocationMarker
+          lat={event.geometries[0].coordinates[1]}
+          lng={event.geometries[0].coordinates[0]}
+          onClick={() => setLocationInfo({ id: event.id, title: event.title })}
+        />
+      );
     }
     return null;
   });
