@@ -41,3 +41,12 @@ body {
   border-radius: 10px;
   font-size: 18px;
 }
+
+.location-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.location-info li {
+  padding: 5px 0;
+}
