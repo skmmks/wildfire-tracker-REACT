@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import Map from './components/Map';
 import Loader from './components/Loader';
+import Header from './components/Header';
 
 function App() {
   const [eventData, setEventData] = useState([]);
@@ -20,7 +21,13 @@ function App() {
     fetchEvents();
   }, []);
 
-  return <div>{!loading ? <Map eventData={eventData} /> : <Loader />}</div>;
+  return (
+    <div>
+      {' '}
+      <Header />
+      {!loading ? <Map eventData={eventData} /> : <Loader />}
+    </div>
+  );
 }
 
 export default App;
