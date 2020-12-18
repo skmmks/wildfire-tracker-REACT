@@ -1,7 +1,7 @@
 # Wildfire Tracker
 
 ## Getting Started
-npm install
+npm install  
 npm start
 
 ## API Key
