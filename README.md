@@ -1,5 +1,6 @@
 # Wildfire Tracker
 This application tracks current wildfires and plots data into a google map
+<img src="wildfire.gif">
 
 ## Tech Used
 react.js
